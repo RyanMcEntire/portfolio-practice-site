@@ -62,10 +62,45 @@ body {
   max-height: 30rem;
 }
 
+.hero-picture {
+  max-height: 30rem;
+  box-shadow: 5px 5px 7px rgba(0, 0, 0, 0.35);
+  margin-top: 2rem;
+}
+
 .my-name {
   font-family: 'playfair display', serif;
   color: #ffffff;
-  transform: translateY(-14rem);
-  font-size: 4rem;
+  transform: translateY(-12rem);
+  font-size: 3rem;
+  font-weight: 400;
   padding-left: 1.5rem;
+  text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.75);
+}
+
+h2 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'playfair display', serif;
+  font-weight: 400;
+}
+
+.box {
+  margin: 0rem 1rem;
+}
+
+p {
+  font-family: Roboto;
+  line-height: 1.5rem;
+}
+
+.about-me-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-links {
+  display: flex;
+  gap: 1rem;
 }
