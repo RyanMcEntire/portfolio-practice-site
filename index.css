@@ -26,7 +26,7 @@ body {
 .top-rectangle-fill {
   position: absolute;
   background-color: #ec3838;
-  height: 7rem;
+  height: 16rem;
   width: 100%;
   top: 0rem;
 }
@@ -34,9 +34,9 @@ body {
 .diagonal-box {
   position: absolute;
   background-color: #ffffff;
-  height: 8rem;
+  height: 12rem;
   width: calc(100% + 4px);
-  top: 6.9rem;
+  top: 15.9rem;
   left: -4px;
   background: linear-gradient(
     to right bottom,
@@ -44,9 +44,28 @@ body {
     #b97f7f 49.85%,
     #f3e4e4 51%
   );
-  filter: blur(1px);
 }
 
 .my-work-container {
   margin-top: 3rem;
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero-picture-container {
+  margin-top: 2rem;
+  max-height: 30rem;
+}
+
+.my-name {
+  font-family: 'playfair display', serif;
+  color: #ffffff;
+  transform: translateY(-14rem);
+  font-size: 4rem;
+  padding-left: 1.5rem;
 }
