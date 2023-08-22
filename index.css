@@ -5,13 +5,13 @@ body {
 }
 
 .small {
-  height: 1rem;
-  width: 1rem;
+  height: 1.5rem;
+  width: 1.5rem;
 }
 
 .medium {
-  height: 1.5rem;
-  width: 1.5rem;
+  height: 2rem;
+  width: 2rem;
 }
 
 .large {
@@ -80,9 +80,19 @@ body {
 
 h2 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 3rem;
   font-family: 'playfair display', serif;
   font-weight: 400;
+  max-height: 1rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
+}
+
+h3 {
+  font-family: 'playfair display', serif;
+  font-size: 1.5rem;
+  margin-top: .5rem;
+  margin-bottom: .5rem;
 }
 
 .box {
@@ -91,16 +101,56 @@ h2 {
 
 p {
   font-family: Roboto;
-  line-height: 1.5rem;
+  line-height: 2rem;
+  font-size: 1.5rem;
 }
 
 .about-me-container {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 4rem;
 }
 
 .hero-links {
   display: flex;
+  gap: 1.5rem;
+}
+
+.project-card {
+  margin-bottom: 5rem;
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.30);
+}
+
+.screenshot {
+  height: 18rem;
+  background-color: rgb(132, 103, 212);
+}
+
+.project-info {
+  min-height:  12rem;
+  background-color: #fff;
+
+}
+
+.project-name-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 0rem 2rem;
+}
+
+.my-work-header {
+  margin-bottom: 4rem;
+}
+
+.project-icons {
+  display: flex;
+  align-items: center;
   gap: 1rem;
+}
+
+.project-description {
+  padding: 1rem;
+  font-family: Roboto;
+  font-size: 1.1rem;
 }
