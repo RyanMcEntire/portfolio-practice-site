@@ -91,8 +91,8 @@ h2 {
 h3 {
   font-family: 'playfair display', serif;
   font-size: 1.5rem;
-  margin-top: .5rem;
-  margin-bottom: .5rem;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .box {
@@ -117,9 +117,15 @@ p {
   gap: 1.5rem;
 }
 
+.project-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
 .project-card {
   margin-bottom: 5rem;
-  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.30);
+  box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
 }
 
 .screenshot {
@@ -128,9 +134,8 @@ p {
 }
 
 .project-info {
-  min-height:  12rem;
+  min-height: 12rem;
   background-color: #fff;
-
 }
 
 .project-name-row {
@@ -176,7 +181,6 @@ p {
 
 .info {
   display: flex;
-
 }
 
 .mobile-only-icon {
@@ -188,4 +192,62 @@ p {
   gap: 1rem;
   margin: 1rem;
   margin-bottom: 2rem;
+}
+
+@media screen and (min-width: 500px) {
+  .project-card-container {
+    gap: 1rem;
+  }
+
+  .my-work-container {
+    margin-top: 15rem;
+  }
+  .my-work-header {
+    text-align: left;
+  }
+
+  .project-card {
+    min-width: 8rem;
+    max-width: 20rem;
+  }
+  .hero-content {
+    align-items: start;
+    position: relative;
+  }
+  .hero-picture-container {
+    position: relative;
+    bottom: 0;
+    z-index: 1;
+  }
+  .my-name {
+    position: absolute;
+    right: -60%;
+    bottom: 10%;
+  }
+  .my-name > br {
+    display: none;
+  }
+  .about-me-container {
+    background-color: #fff;
+    padding: 1rem;
+    max-width: 800px;
+    margin: auto;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    align-self: center;
+    box-shadow: 5px 5px 9px rgba(0, 0, 0, 0.3);
+    align-items: end;
+    position: absolute;
+    top: 80%;
+  }
+  .medium {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .project-card-container {
+    max-width: 1450px;
+    margin: auto;
+  }
 }
