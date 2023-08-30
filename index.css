@@ -104,7 +104,7 @@ p {
 }
 
 .about-me-container {
-  display:block;
+  display: block;
   align-items: center;
   margin-bottom: 5rem;
 }
@@ -178,9 +178,10 @@ p {
 
 .info {
   display: flex;
+  gap: 1rem;
 }
 
-.mobile-only-icon {
+.non-mobile-icon {
   display: none;
 }
 
@@ -209,7 +210,7 @@ p {
   }
   .hero-content {
     display: block;
-    align-items: start; 
+    align-items: start;
     margin-top: 16rem;
   }
   .hero-picture-container {
@@ -241,11 +242,39 @@ p {
   .medium {
     display: none;
   }
+  .contact-info {
+    margin: 2rem;
+  }
+  .non-mobile-icon {
+    display: block;
+  }
 }
 
 @media screen and (min-width: 1000px) {
   .project-card-container {
     max-width: 1450px;
     margin: auto;
+  }
+  .my-name {
+    translate: 0rem 4rem;
+  }
+  .hero-content {
+    margin-top: 8rem;
+    margin-left: auto;
+  }
+  .hero-picture-container {
+    float: left;
+    margin-top: -6rem;
+  }
+  .my-work-header {
+    margin-top: 10rem;
+  }
+  .hero-links {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+  }
+  .medium {
+    display: block;
   }
 }
